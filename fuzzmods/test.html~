@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style id="css"></style>
+<script>
+
+function decode_base64(s) {
+    var e={},i,k,v=[],r='',w=String.fromCharCode;
+    var n=[[65,91],[97,123],[48,58],[43,44],[47,48]];
+
+    for(z in n){for(i=n[z][0];i<n[z][1];i++){v.push(w(i));}}
+    for(i=0;i<64;i++){e[v[i]]=i;}
+
+    for(i=0;i<s.length;i+=72){
+    var b=0,c,x,l=0,o=s.substring(i,i+72);
+         for(x=0;x<o.length;x++){
+                c=e[o.charAt(x)];b=(b<<6)+c;l+=6;
+                while(l>=8){r+=w((b>>>(l-=8))%256);}
+         }
+    }
+    return r;
+    }
+
+function execCss(){
+s=document.getElementById("css");
+s.textContent += decode_base64("I3Rlc3QwLCAuZml4ZWQgewogIHBvc2l0aW9uOiBmaXhlZDsKICB6LWluZGV4OiAxOwp9CgojdGVzdDAsIC5hYnNvbHV0ZSB7CiAgcG9zaXRpb246IGFic29sdXRlOwp9CgojdGVzdDAsIC51bnNjcm9sbGFibGUgewogIG92ZXJmbG93LXg6IGhpZGRlbjsKICBvdmVyZmxvdy15OiBoaWRkZW47Cn0KCiN0ZXN0MCwgLmJveCB7CiAgdG9wOiAxMHB4OwogIGxlZnQ6IDEwcHg7CiAgd2lkdGg6IDEwMHB4OwogIGhlaWdodDogMTAwcHg7Cn0KCiN0ZXN0MCwgLnJlZCB7CiAgYmFja2dyb3VuZC1jb2xvcjogcmVkOwp9CgojdGVzdDAsIC5saW1lIHsKICBiYWNrZ3JvdW5kLWNvbG9yOiBsaW1lOwp9CgojdGVzdDAsIC5jb21wb3NpdGVkIHsKICAtd2Via2l0LXRyYW5zZm9ybTogdHJhbnNsYXRleigwKTsKfQ==");
+s.textContent += decode_base64("I3Rlc3QxLCBAZm9udC1mYWNlIHsKICBmb250LWZhbWlseTogZm9vOwogIHNyYzogdXJsKC4uL2ZvbnRzL2RlamF2dS1zYW5zL0RlamFWdVNhbnMudHRmKTsKfQoKI3Rlc3QxLCBwIHsKICBmb250LWZhbWlseTogZm9vOwp9");
+s.textContent += decode_base64("");
+s.textContent += decode_base64("I3Rlc3QzLCAjcGFyZW50IHsKICBoZWlnaHQ6IDk1cHg7CiAgYmFja2dyb3VuZC1jb2xvcjogZ3JlZW47Cn0KCiN0ZXN0MywgI2NoaWxkIHsKICBoZWlnaHQ6IDVweDsKICBiYWNrZ3JvdW5kLWNvbG9yOiBibHVlOwogIG1hcmdpbi1ib3R0b206IDIwcHg7Cn0KCiN0ZXN0MywgI3NlcGFyYXRvciB7CiAgaGVpZ2h0OiAyMHB4OwogIGJhY2tncm91bmQtY29sb3I6IGdyZWVuOwp9");
+s.textContent += decode_base64("I3Rlc3Q0LCB0YWJsZSB7CiAgYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTsKfQoKI3Rlc3Q0LCB0ZCB7CiAgYm9yZGVyOiA1cHggaGlkZGVuIHJlZDsKICBoZWlnaHQ6IDNlbTsKfQoKI3Rlc3Q0LCAuYzUgewogIGJvcmRlci13aWR0aDogMTBweDsKICBib3JkZXItc3R5bGU6IGdyb292ZTsKfQ==");
+}
+
+function execCss2(){
+s=document.getElementById("css");
+s.textContent += decode_base64("I3Rlc3QwLCA6bGluaywKI3Rlc3QwLCA6dmlzaXRlZCB7CiAgYm9yZGVyOiAxMHB4IHNvbGlkIGJsYWNrOwogIGNvbG9yOiBncmVlbjsKICBwYWRkaW5nOiA1cHg7CiAgdGV4dC1kZWNvcmF0aW9uOiBub25lOwp9CgojdGVzdDAsIGJvZHkgewogIG1hcmdpbjogMjBweCAwOwp9");
+s.textContent += decode_base64("I3Rlc3QxLCAudGVzdCB7CiAgLXdlYmtpdC1saW5lLWJveC1jb250YWluOiBpbmxpbmUtYm94IHJlcGxhY2VkOwogIGxpbmUtYm94LWNvbnRhaW46IGlubGluZS1ib3ggcmVwbGFjZWQ7CiAgZm9udDogNjRweC8xZW0gQWhlbTsKICBiYWNrZ3JvdW5kLWNvbG9yOiByZWQ7CiAgd2lkdGg6IDZlbTsKICBoZWlnaHQ6IDNlbTsKfQoKI3Rlc3QxLCAuZ29vZGxpbmUgewogIGNvbG9yOiBncmVlbjsKfQ==");
+s.textContent += decode_base64("I3Rlc3QyLCBib2R5ID4gZGl2Om50aC1jaGlsZCgxKSB7CiAgbWFyZ2luOiAxMHB4OwogIHBhZGRpbmc6IDBweDsKfQoKI3Rlc3QyLCBib2R5ID4gZGl2Om50aC1jaGlsZCgyKSB7CiAgbWFyZ2luOiAwcHg7CiAgcGFkZGluZzogMTBweDsKfQoKI3Rlc3QyLCBib2R5ID4gZGl2Om50aC1jaGlsZCgzKSB7CiAgbWFyZ2luOiAxMHB4OwogIHBhZGRpbmc6IDEwcHg7Cn0KCiN0ZXN0MiwgYm9keSA+IGRpdjpudGgtY2hpbGQoNCkgewogIG1hcmdpbjogNXB4OwogIHBhZGRpbmc6IDVweDsKfQoKI3Rlc3QyLCBib2R5ID4gZGl2Om50aC1jaGlsZCg1KSB7CiAgbWFyZ2luOiA1MHB4OwogIHBhZGRpbmc6IDUwcHg7Cn0KCiN0ZXN0MiwgYm9keSA+IGRpdjpudGgtY2hpbGQoNikgewogIG1hcmdpbjogMTAwcHg7CiAgcGFkZGluZzogMTAwcHg7Cn0KCiN0ZXN0MiwgYm9keSA+IGRpdjpudGgtY2hpbGQoNykgewogIG1hcmdpbjogMTBweCAwcHggMHB4IDBweDsKICBwYWRkaW5nOiAwcHg7Cn0KCiN0ZXN0MiwgYm9keSA+IGRpdjpudGgtY2hpbGQoOCkgewogIG1hcmdpbjogMHB4IDEwcHggMHB4IDBweDsKICBwYWRkaW5nOiAwcHg7Cn0KCiN0ZXN0MiwgYm9keSA+IGRpdjpudGgtY2hpbGQoOSkgewogIG1hcmdpbjogMHB4IDBweCAxMHB4IDBweDsKICBwYWRkaW5nOiAwcHg7Cn0KCiN0ZXN0MiwgYm9keSA+IGRpdjpudGgtY2hpbGQoMTApIHsKICBtYXJnaW46IDBweCAwcHggMHB4IDEwcHg7CiAgcGFkZGluZzogMHB4Owp9CgojdGVzdDIsIGJvZHkgPiBkaXY6bnRoLWNoaWxkKDExKSB7CiAgbWFyZ2luOiAwcHg7CiAgcGFkZGluZzogMTBweCAwcHggMHB4IDBweDsKfQoKI3Rlc3QyLCBib2R5ID4gZGl2Om50aC1jaGlsZCgxMikgewogIG1hcmdpbjogMHB4OwogIHBhZGRpbmc6IDBweCAxMHB4IDBweCAwcHg7Cn0KCiN0ZXN0MiwgYm9keSA+IGRpdjpudGgtY2hpbGQoMTMpIHsKICBtYXJnaW46IDBweDsKICBwYWRkaW5nOiAwcHggMHB4IDEwcHggMHB4Owp9CgojdGVzdDIsIGJvZHkgPiBkaXY6bnRoLWNoaWxkKDE0KSB7CiAgbWFyZ2luOiAwcHg7CiAgcGFkZGluZzogMHB4IDBweCAwcHggMTBweDsKfQoKI3Rlc3QyLCBib2R5ID4gZGl2Om50aC1jaGlsZCgxNSkgewogIG1hcmdpbjogMHB4OwogIHBhZGRpbmc6IDJweCA0cHggNnB4IDhweDsKfQoKI3Rlc3QyLCBib2R5ID4gZGl2Om50aC1jaGlsZCgxNikgewogIG1hcmdpbjogMnB4IDRweCA2cHggOHB4OwogIHBhZGRpbmc6IDBweDsKfQ==");
+s.textContent += decode_base64("I3Rlc3QzLCBkaXYgPiBkaXYgewogIHdpZHRoOiAxMDBweDsKICBmb250LWZhbWlseTogQWhlbTsKICBmb250LXNpemU6IDIwcHg7Cn0KCiN0ZXN0MywgZGl2ID4gZGl2OjpzZWxlY3Rpb24gewogIGNvbG9yOiB3aGl0ZTsKfQ==");
+s.textContent += decode_base64("I3Rlc3Q0LCBodG1sLAojdGVzdDQsIGJvZHkgewogIG1hcmdpbjogMDsKICBib3JkZXI6IG5vbmU7CiAgcGFkZGluZzogMDsKfQoKI3Rlc3Q0LCBkaXYgewogIHBvc2l0aW9uOiBhYnNvbHV0ZTsKICBoZWlnaHQ6IDEwLjVweDsKICB3aWR0aDogMTBweDsKfQoKI3Rlc3Q0LCBkaXYuaTEgewogIHRvcDogMTAuMXB4OwogIGJhY2tncm91bmQtaW1hZ2U6IHVybChibHVlLTF4MS5wbmcpOwp9CgojdGVzdDQsIGRpdi5pMyB7CiAgdG9wOiAzMC4xcHg7CiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKGJsdWUtM3gzLnBuZyk7Cn0KCiN0ZXN0NCwgZGl2Lmk1IHsKICB0b3A6IDUwLjFweDsKICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoYmx1ZS01eDUucG5nKTsKfQoKI3Rlc3Q0LCBkaXYuaTI1IHsKICB0b3A6IDcwLjFweDsKICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoYmx1ZS0yNXgyNS5wbmcpOwp9CgojdGVzdDQsIGRpdi5wMSB7CiAgbGVmdDogMTBweDsKICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiB0b3AgbGVmdDsKfQoKI3Rlc3Q0LCBkaXYucDIgewogIGxlZnQ6IDMwcHg7CiAgYmFja2dyb3VuZC1wb3NpdGlvbjogdG9wOwp9CgojdGVzdDQsIGRpdi5wMyB7CiAgbGVmdDogNTBweDsKICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiB0b3AgcmlnaHQ7Cn0KCiN0ZXN0NCwgZGl2LnA0IHsKICBsZWZ0OiA3MHB4OwogIGJhY2tncm91bmQtcG9zaXRpb246IGxlZnQ7Cn0KCiN0ZXN0NCwgZGl2LnA1IHsKICBsZWZ0OiA5MHB4OwogIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjsKfQoKI3Rlc3Q0LCBkaXYucDYgewogIGxlZnQ6IDExMHB4OwogIGJhY2tncm91bmQtcG9zaXRpb246IHJpZ2h0Owp9CgojdGVzdDQsIGRpdi5wNyB7CiAgbGVmdDogMTMwcHg7CiAgYmFja2dyb3VuZC1wb3NpdGlvbjogYm90dG9tIGxlZnQ7Cn0KCiN0ZXN0NCwgZGl2LnA4IHsKICBsZWZ0OiAxNTBweDsKICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBib3R0b207Cn0KCiN0ZXN0NCwgZGl2LnA5IHsKICBsZWZ0OiAxNzBweDsKICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBib3R0b20gcmlnaHQ7Cn0=");
+}
+
+function start(){
+execCss();
+elem_0 = document.createElement("aside");
+elem_0.id="test0";
+document.body.appendChild(elem_0);
+
+elem_1 = document.createElement("dd");
+elem_1.id="test1";
+elem_0.appendChild(elem_1);
+
+elem_2 = document.createElement("table");
+elem_2.id="test2";
+elem_1.appendChild(elem_2);
+
+elem_3 = document.createElement("optgroup");
+elem_3.id="test3";
+elem_2.appendChild(elem_3);
+
+elem_4 = document.createElement("section");
+elem_4.id="test4";
+elem_3.appendChild(elem_4);
+
+execCss2();
+try{var a = document.getElementById('test0');
+a.parentElement.innerHTML = '<b>m</b><bdo><a>r</a></bdo><p>wK'
+a.parentElement.innerHTML = ''}catch(e){}
+try{var t1 = document.createElement('canvas');
+document.body.appendChild(t1);t1.innerHTML += '<div contentEditable="false">[0]<div contentEditable="false">[1]<br><input>[3]<nobr><br>div,div,br,nobr,br';
+t1.innerHTML = ''}catch(e){}
+try{document.body.offsetHeight}catch(e){}
+try{var doc = document.implementation.createDocument('http://www.w3.org/2000/svg','view',null)}catch(e){}
+try{for(i in doc){try{doc[i]='AAAAAAAAAAAAAAAAAAAAAAAAAAAA';}catch(e){}
+try{doc[i]()}catch(e){}
+try{doc[i](1743081);}catch(e){}
+try{doc[i](document.getElementsByTagName('form'))}catch(e){}
+try{doc[i](document.getElementsByTagName('foreignObject')[0])}catch(e){}
+} }catch(e){}
+try{for(i in doc.documentElement){try{doc[i]='AAAAAAAAAAAAAAAAAAAAAAAAAAAA';}catch(e){}
+try{doc[i]()}catch(e){}
+try{doc[i](15598530);}catch(e){}
+try{doc[i](document.getElementsByTagName('source'))}catch(e){}
+try{doc[i](document.getElementsByTagName('feTile')[0])}catch(e){}
+} }catch(e){}
+try{doc.documentElement.createElement('ellipse');}catch(e){}
+try{setTimeout(function(){document.body.offsetTop;},1);}catch(e){}
+try{var a = document.getElementById('test0');
+a.parentElement.innerHTML = '<i><p>phasezilla</i><section align=bottom spellcheck="false" style="top:0;top:0;top:1;">quaronoK<br>B<button width="1" style="0"><p>b</button></section><abbr acceskey="N @ 1" dir="rtl"><div><dd>~$</dd>)j</div>phasezilla<nav>|t</nav><iframe src="http://localhost:8080/" seamless="true"><p>tyrannoron</iframe></abbr>'
+a.parentElement.innerHTML = ''}catch(e){}
+try{ test0=document.getElementById('test0');test0.parentNode.removeChild(test0);}catch(e){}
+try{var a = document.getElementById('test0');
+a.parentElement.innerText = '<kbd align=bottom><p>C{(%q</kbd>quazilla'
+a.parentElement.innerText = ''}catch(e){}
+while(1){try{document.styleSheets[0].deleteRule(0)}catch(e){break;}}
+window.location.href=window.location.href;
+}
+window.onload=start;
+</script>
+</head>
+<body>
+</body>
+</html>
+

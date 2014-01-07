@@ -1,0 +1,395 @@
+
+Microsoft (R) Windows Debugger Version 6.2.9200.20512 X86
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+CommandLine: "C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\chrome.exe" "http://localhost:4444/fuzz"  
+Symbol search path is: *** Invalid ***
+****************************************************************************
+* Symbol loading may be unreliable without a symbol search path.           *
+* Use .symfix to have the debugger choose a symbol path.                   *
+* After setting your symbol path, use .reload to refresh symbol locations. *
+****************************************************************************
+Executable search path is: 
+ModLoad: 01130000 01208000   chrome.exe
+ModLoad: 76ea0000 77020000   ntdll.dll
+ModLoad: 763d0000 764e0000   C:\Windows\syswow64\kernel32.dll
+ModLoad: 74840000 74887000   C:\Windows\syswow64\KERNELBASE.dll
+ModLoad: 74270000 742dd000   C:\Windows\SysWOW64\SYSFER.DLL
+ModLoad: 747e0000 74837000   C:\Windows\syswow64\SHLWAPI.dll
+ModLoad: 749f0000 74a80000   C:\Windows\syswow64\GDI32.dll
+ModLoad: 74bb0000 74cb0000   C:\Windows\syswow64\USER32.dll
+ModLoad: 748f0000 74990000   C:\Windows\syswow64\ADVAPI32.dll
+ModLoad: 76020000 760cc000   C:\Windows\syswow64\msvcrt.dll
+ModLoad: 765c0000 765d9000   C:\Windows\SysWOW64\sechost.dll
+ModLoad: 75bd0000 75cc0000   C:\Windows\syswow64\RPCRT4.dll
+ModLoad: 74580000 745e0000   C:\Windows\syswow64\SspiCli.dll
+ModLoad: 74570000 7457c000   C:\Windows\syswow64\CRYPTBASE.dll
+ModLoad: 74890000 7489a000   C:\Windows\syswow64\LPK.dll
+ModLoad: 75cc0000 75d5d000   C:\Windows\syswow64\USP10.dll
+ModLoad: 69350000 6935c000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\chrome_elf.dll
+ModLoad: 74190000 741a7000   C:\Windows\SysWOW64\USERENV.dll
+ModLoad: 74180000 7418b000   C:\Windows\SysWOW64\profapi.dll
+ModLoad: 73f50000 73f5d000   C:\Windows\SysWOW64\WTSAPI32.dll
+ModLoad: 74410000 74419000   C:\Windows\SysWOW64\VERSION.dll
+ModLoad: 73140000 73172000   C:\Windows\SysWOW64\WINMM.dll
+ModLoad: 70030000 7007c000   C:\Windows\SysWOW64\apphelp.dll
+ModLoad: 6ccd0000 6cce1000   C:\Windows\AppPatch\emet.dll
+ModLoad: 760d0000 76130000   C:\Windows\SysWOW64\IMM32.DLL
+ModLoad: 745e0000 746ac000   C:\Windows\syswow64\MSCTF.dll
+ModLoad: 74f80000 75bca000   C:\Windows\syswow64\SHELL32.dll
+ModLoad: 74cb0000 74e0c000   C:\Windows\syswow64\ole32.dll
+ModLoad: 02ce0000 04785000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\chrome.dll
+ModLoad: 76370000 7639e000   C:\Windows\syswow64\WINTRUST.dll
+ModLoad: 75f00000 76020000   C:\Windows\syswow64\CRYPT32.dll
+ModLoad: 746b0000 746bc000   C:\Windows\syswow64\MSASN1.dll
+ModLoad: 76e70000 76e75000   C:\Windows\syswow64\PSAPI.DLL
+ModLoad: 74b10000 74b9f000   C:\Windows\syswow64\OLEAUT32.dll
+ModLoad: 6d490000 6d62e000   C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\COMCTL32.dll
+ModLoad: 73580000 735bc000   C:\Windows\SysWOW64\OLEACC.dll
+ModLoad: 74420000 74428000   C:\Windows\SysWOW64\Secur32.dll
+ModLoad: 72880000 7296b000   C:\Windows\SysWOW64\dbghelp.dll
+ModLoad: 4a810000 4b191000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\icudt.dll
+ModLoad: 743e0000 74401000   C:\Windows\SysWOW64\ntmarta.dll
+ModLoad: 76570000 765b5000   C:\Windows\syswow64\WLDAP32.dll
+ModLoad: 6c310000 6c314000   C:\Windows\SysWOW64\KBDUS.DLL
+ModLoad: 74e20000 74e55000   C:\Windows\syswow64\WS2_32.dll
+ModLoad: 74ba0000 74ba6000   C:\Windows\syswow64\NSI.dll
+ModLoad: 73ce0000 73cf0000   C:\Windows\SysWOW64\NLAapi.dll
+ModLoad: 73f30000 73f4c000   C:\Windows\SysWOW64\IPHLPAPI.DLL
+ModLoad: 74130000 74137000   C:\Windows\SysWOW64\WINNSI.DLL
+ModLoad: 74090000 740a2000   C:\Windows\SysWOW64\dhcpcsvc.DLL
+ModLoad: 73e40000 73e4d000   C:\Windows\SysWOW64\dhcpcsvc6.DLL
+ModLoad: 72700000 72736000   C:\Windows\SysWOW64\audioses.dll
+ModLoad: 72840000 72879000   C:\Windows\SysWOW64\MMDevAPI.DLL
+ModLoad: 72740000 72835000   C:\Windows\SysWOW64\PROPSYS.dll
+ModLoad: 764e0000 76563000   C:\Windows\syswow64\CLBCatQ.DLL
+ModLoad: 75d60000 75efd000   C:\Windows\syswow64\SETUPAPI.dll
+ModLoad: 763a0000 763c7000   C:\Windows\syswow64\CFGMGR32.dll
+ModLoad: 748d0000 748e2000   C:\Windows\syswow64\DEVOBJ.dll
+ModLoad: 74160000 74176000   C:\Windows\SysWOW64\GPAPI.dll
+ModLoad: 06e10000 06ee8000   chrome.exe
+Symbol search path is: *** Invalid ***
+****************************************************************************
+* Symbol loading may be unreliable without a symbol search path.           *
+* Use .symfix to have the debugger choose a symbol path.                   *
+* After setting your symbol path, use .reload to refresh symbol locations. *
+****************************************************************************
+Executable search path is: 
+ModLoad: 01130000 01208000   chrome.exe
+ModLoad: 76ea0000 77020000   ntdll.dll
+ModLoad: 743c0000 743d6000   C:\Windows\SysWOW64\CRYPTSP.dll
+ModLoad: 73e00000 73e3c000   C:\Windows\SysWOW64\mswsock.dll
+ModLoad: 6d8c0000 6d8c6000   C:\Windows\SysWOW64\wship6.dll
+ModLoad: 70a30000 70a36000   C:\Windows\SysWOW64\rasadhlp.dll
+ModLoad: 74230000 7426b000   C:\Windows\SysWOW64\rsaenh.dll
+ModLoad: 763d0000 764e0000   C:\Windows\syswow64\kernel32.dll
+ModLoad: 74840000 74887000   C:\Windows\syswow64\KERNELBASE.dll
+ModLoad: 743b0000 743be000   C:\Windows\SysWOW64\RpcRtRemote.dll
+ModLoad: 74270000 742dd000   C:\Windows\SysWOW64\SYSFER.DLL
+ModLoad: 747e0000 74837000   C:\Windows\syswow64\SHLWAPI.dll
+ModLoad: 749f0000 74a80000   C:\Windows\syswow64\GDI32.dll
+ModLoad: 74bb0000 74cb0000   C:\Windows\syswow64\USER32.dll
+ModLoad: 740e0000 74124000   C:\Windows\SysWOW64\DNSAPI.dll
+ModLoad: 748f0000 74990000   C:\Windows\syswow64\ADVAPI32.dll
+ModLoad: 76020000 760cc000   C:\Windows\syswow64\msvcrt.dll
+ModLoad: 765c0000 765d9000   C:\Windows\SysWOW64\sechost.dll
+ModLoad: 75bd0000 75cc0000   C:\Windows\syswow64\RPCRT4.dll
+ModLoad: 74580000 745e0000   C:\Windows\syswow64\SspiCli.dll
+ModLoad: 6d7d0000 6d7f1000   C:\Program Files (x86)\Bonjour\mdnsNSP.dll
+ModLoad: 74570000 7457c000   C:\Windows\syswow64\CRYPTBASE.dll
+ModLoad: 74890000 7489a000   C:\Windows\syswow64\LPK.dll
+ModLoad: 75cc0000 75d5d000   C:\Windows\syswow64\USP10.dll
+ModLoad: 69350000 6935c000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\chrome_elf.dll
+ModLoad: 74190000 741a7000   C:\Windows\SysWOW64\USERENV.dll
+ModLoad: 74180000 7418b000   C:\Windows\SysWOW64\profapi.dll
+ModLoad: 73f50000 73f5d000   C:\Windows\SysWOW64\WTSAPI32.dll
+ModLoad: 74410000 74419000   C:\Windows\SysWOW64\VERSION.dll
+ModLoad: 73140000 73172000   C:\Windows\SysWOW64\WINMM.dll
+ModLoad: 70030000 7007c000   C:\Windows\SysWOW64\apphelp.dll
+ModLoad: 71b70000 71ba8000   C:\Windows\SysWOW64\fwpuclnt.dll
+ModLoad: 6ccd0000 6cce1000   C:\Windows\AppPatch\emet.dll
+ModLoad: 760d0000 76130000   C:\Windows\SysWOW64\IMM32.DLL
+ModLoad: 745e0000 746ac000   C:\Windows\syswow64\MSCTF.dll
+ModLoad: 64660000 646af000   C:\Windows\SysWOW64\Wpc.dll
+ModLoad: 73a70000 73ab2000   C:\Windows\SysWOW64\wevtapi.dll
+ModLoad: 6b3e0000 6b3ec000   C:\Windows\SysWOW64\mssprxy.dll
+ModLoad: 74f80000 75bca000   C:\Windows\syswow64\SHELL32.dll
+ModLoad: 0f960000 118db000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\chrome_child.dll
+ModLoad: 6c910000 6c91f000   C:\Windows\SysWOW64\samcli.dll
+ModLoad: 746c0000 747db000   C:\Windows\syswow64\WININET.dll
+ModLoad: 74e10000 74e13000   C:\Windows\syswow64\Normaliz.dll
+ModLoad: 76130000 762e9000   C:\Windows\syswow64\iertutil.dll
+ModLoad: 71040000 71052000   C:\Windows\SysWOW64\SAMLIB.dll
+ModLoad: 74e60000 74f71000   C:\Windows\syswow64\urlmon.dll
+ModLoad: 74cb0000 74e0c000   C:\Windows\syswow64\ole32.dll
+ModLoad: 73e50000 73e79000   C:\Windows\SysWOW64\WINSTA.dll
+ModLoad: 74b10000 74b9f000   C:\Windows\syswow64\OLEAUT32.dll
+ModLoad: 74e20000 74e55000   C:\Windows\syswow64\WS2_32.dll
+ModLoad: 74ba0000 74ba6000   C:\Windows\syswow64\NSI.dll
+ModLoad: 76e70000 76e75000   C:\Windows\syswow64\PSAPI.DLL
+ModLoad: 73820000 73871000   C:\Windows\SysWOW64\WINSPOOL.DRV
+ModLoad: 71ad0000 71ad9000   C:\Windows\SysWOW64\netutils.dll
+ModLoad: 75f00000 76020000   C:\Windows\syswow64\CRYPT32.dll
+ModLoad: 746b0000 746bc000   C:\Windows\syswow64\MSASN1.dll
+ModLoad: 73f30000 73f4c000   C:\Windows\SysWOW64\IPHLPAPI.DLL
+ModLoad: 74130000 74137000   C:\Windows\SysWOW64\WINNSI.DLL
+ModLoad: 74420000 74428000   C:\Windows\SysWOW64\Secur32.dll
+ModLoad: 72880000 7296b000   C:\Windows\SysWOW64\dbghelp.dll
+ModLoad: 71a50000 71a63000   C:\Windows\SysWOW64\dwmapi.dll
+ModLoad: 4a810000 4b191000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\icudt.dll
+ModLoad: 75d60000 75efd000   C:\Windows\syswow64\setupapi.dll
+ModLoad: 763a0000 763c7000   C:\Windows\syswow64\CFGMGR32.dll
+ModLoad: 748d0000 748e2000   C:\Windows\syswow64\DEVOBJ.dll
+ModLoad: 71a50000 71a63000   C:\Windows\SysWOW64\dwmapi.dll
+ModLoad: 03850000 03b69000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\D3DCompiler_46.dll
+ModLoad: 610d0000 61183000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\libglesv2.dll
+ModLoad: 71200000 713c3000   C:\Windows\SysWOW64\d3d9.dll
+ModLoad: 713d0000 713d6000   C:\Windows\SysWOW64\d3d8thk.dll
+ModLoad: 64710000 6472c000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\libegl.dll
+ModLoad: 03d30000 04b98000   C:\Windows\SysWOW64\nvd3dum.dll
+ModLoad: 6d490000 6d62e000   C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\comctl32.dll
+ModLoad: 713e0000 71460000   C:\Windows\SysWOW64\UxTheme.dll
+ModLoad: 65db0000 65dd5000   C:\Windows\SysWOW64\powrprof.dll
+ModLoad: 092c0000 0938c000   C:\Windows\SysWOW64\msctf.dll
+ModLoad: 713e0000 71460000   C:\Windows\SysWOW64\uxtheme.dll
+ModLoad: 0a200000 0a2d8000   chrome.exe
+ModLoad: 71cf0000 71d48000   C:\Windows\SysWOW64\WINHTTP.dll
+ModLoad: 71ca0000 71cef000   C:\Windows\SysWOW64\webio.dll
+Symbol search path is: *** Invalid ***
+****************************************************************************
+* Symbol loading may be unreliable without a symbol search path.           *
+* Use .symfix to have the debugger choose a symbol path.                   *
+* After setting your symbol path, use .reload to refresh symbol locations. *
+****************************************************************************
+Executable search path is: 
+ModLoad: 01130000 01208000   chrome.exe
+ModLoad: 76ea0000 77020000   ntdll.dll
+ModLoad: 0a200000 0a35c000   C:\Windows\SysWOW64\ole32.dll
+ModLoad: 763d0000 764e0000   C:\Windows\syswow64\kernel32.dll
+ModLoad: 74840000 74887000   C:\Windows\syswow64\KERNELBASE.dll
+ModLoad: 72100000 72108000   C:\Windows\SysWOW64\credssp.dll
+ModLoad: 74270000 742dd000   C:\Windows\SysWOW64\SYSFER.DLL
+ModLoad: 747e0000 74837000   C:\Windows\syswow64\SHLWAPI.dll
+ModLoad: 59ea0000 5a00f000   C:\Windows\SysWOW64\explorerframe.dll
+ModLoad: 749f0000 74a80000   C:\Windows\syswow64\GDI32.dll
+ModLoad: 74bb0000 74cb0000   C:\Windows\syswow64\USER32.dll
+ModLoad: 68e40000 68e6f000   C:\Windows\SysWOW64\DUser.dll
+ModLoad: 748f0000 74990000   C:\Windows\syswow64\ADVAPI32.dll
+ModLoad: 76020000 760cc000   C:\Windows\syswow64\msvcrt.dll
+ModLoad: 59de0000 59e92000   C:\Windows\SysWOW64\DUI70.dll
+ModLoad: 765c0000 765d9000   C:\Windows\SysWOW64\sechost.dll
+ModLoad: 75bd0000 75cc0000   C:\Windows\syswow64\RPCRT4.dll
+ModLoad: 74580000 745e0000   C:\Windows\syswow64\SspiCli.dll
+ModLoad: 74570000 7457c000   C:\Windows\syswow64\CRYPTBASE.dll
+ModLoad: 74890000 7489a000   C:\Windows\syswow64\LPK.dll
+ModLoad: 75cc0000 75d5d000   C:\Windows\syswow64\USP10.dll
+ModLoad: 69350000 6935c000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\chrome_elf.dll
+ModLoad: 74190000 741a7000   C:\Windows\SysWOW64\USERENV.dll
+ModLoad: 74180000 7418b000   C:\Windows\SysWOW64\profapi.dll
+ModLoad: 0a700000 0b34a000   C:\Windows\SysWOW64\shell32.dll
+ModLoad: 73f50000 73f5d000   C:\Windows\SysWOW64\WTSAPI32.dll
+ModLoad: 74410000 74419000   C:\Windows\SysWOW64\VERSION.dll
+ModLoad: 73140000 73172000   C:\Windows\SysWOW64\WINMM.dll
+ModLoad: 70030000 7007c000   C:\Windows\SysWOW64\apphelp.dll
+ModLoad: 6ccd0000 6cce1000   C:\Windows\AppPatch\emet.dll
+ModLoad: 0a700000 0a7d8000   chrome.exe
+ModLoad: 760d0000 76130000   C:\Windows\SysWOW64\IMM32.DLL
+ModLoad: 745e0000 746ac000   C:\Windows\syswow64\MSCTF.dll
+ModLoad: 74f80000 75bca000   C:\Windows\syswow64\SHELL32.dll
+ModLoad: 0f960000 118db000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\chrome_child.dll
+ModLoad: 746c0000 747db000   C:\Windows\syswow64\WININET.dll
+ModLoad: 74e10000 74e13000   C:\Windows\syswow64\Normaliz.dll
+ModLoad: 76130000 762e9000   C:\Windows\syswow64\iertutil.dll
+ModLoad: 74e60000 74f71000   C:\Windows\syswow64\urlmon.dll
+ModLoad: 74cb0000 74e0c000   C:\Windows\syswow64\ole32.dll
+Symbol search path is: *** Invalid ***
+****************************************************************************
+* Symbol loading may be unreliable without a symbol search path.           *
+* Use .symfix to have the debugger choose a symbol path.                   *
+* After setting your symbol path, use .reload to refresh symbol locations. *
+****************************************************************************
+Executable search path is: 
+ModLoad: 01130000 01208000   chrome.exe
+ModLoad: 74b10000 74b9f000   C:\Windows\syswow64\OLEAUT32.dll
+ModLoad: 76ea0000 77020000   ntdll.dll
+ModLoad: 74e20000 74e55000   C:\Windows\syswow64\WS2_32.dll
+ModLoad: 74ba0000 74ba6000   C:\Windows\syswow64\NSI.dll
+ModLoad: 76e70000 76e75000   C:\Windows\syswow64\PSAPI.DLL
+ModLoad: 73820000 73871000   C:\Windows\SysWOW64\WINSPOOL.DRV
+ModLoad: 75f00000 76020000   C:\Windows\syswow64\CRYPT32.dll
+ModLoad: 746b0000 746bc000   C:\Windows\syswow64\MSASN1.dll
+ModLoad: 73f30000 73f4c000   C:\Windows\SysWOW64\IPHLPAPI.DLL
+ModLoad: 74130000 74137000   C:\Windows\SysWOW64\WINNSI.DLL
+ModLoad: 763d0000 764e0000   C:\Windows\syswow64\kernel32.dll
+ModLoad: 74420000 74428000   C:\Windows\SysWOW64\Secur32.dll
+ModLoad: 74840000 74887000   C:\Windows\syswow64\KERNELBASE.dll
+ModLoad: 74270000 742dd000   C:\Windows\SysWOW64\SYSFER.DLL
+ModLoad: 747e0000 74837000   C:\Windows\syswow64\SHLWAPI.dll
+ModLoad: 749f0000 74a80000   C:\Windows\syswow64\GDI32.dll
+ModLoad: 72880000 7296b000   C:\Windows\SysWOW64\dbghelp.dll
+ModLoad: 74bb0000 74cb0000   C:\Windows\syswow64\USER32.dll
+ModLoad: 748f0000 74990000   C:\Windows\syswow64\ADVAPI32.dll
+ModLoad: 76020000 760cc000   C:\Windows\syswow64\msvcrt.dll
+ModLoad: 6d490000 6d62e000   C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\comctl32.dll
+ModLoad: 765c0000 765d9000   C:\Windows\SysWOW64\sechost.dll
+ModLoad: 75bd0000 75cc0000   C:\Windows\syswow64\RPCRT4.dll
+ModLoad: 74580000 745e0000   C:\Windows\syswow64\SspiCli.dll
+ModLoad: 74570000 7457c000   C:\Windows\syswow64\CRYPTBASE.dll
+ModLoad: 713e0000 71460000   C:\Windows\SysWOW64\UxTheme.dll
+ModLoad: 74890000 7489a000   C:\Windows\syswow64\LPK.dll
+ModLoad: 75cc0000 75d5d000   C:\Windows\syswow64\USP10.dll
+ModLoad: 69350000 6935c000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\chrome_elf.dll
+ModLoad: 4a810000 4b191000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\icudt.dll
+ModLoad: 74190000 741a7000   C:\Windows\SysWOW64\USERENV.dll
+ModLoad: 74180000 7418b000   C:\Windows\SysWOW64\profapi.dll
+ModLoad: 73f50000 73f5d000   C:\Windows\SysWOW64\WTSAPI32.dll
+ModLoad: 74410000 74419000   C:\Windows\SysWOW64\VERSION.dll
+ModLoad: 73140000 73172000   C:\Windows\SysWOW64\WINMM.dll
+ModLoad: 0f160000 0f55b000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\pdf.dll
+ModLoad: 70030000 7007c000   C:\Windows\SysWOW64\apphelp.dll
+ModLoad: 593b0000 59416000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\ppGoogleNaClPluginChrome.dll
+ModLoad: 6ccd0000 6cce1000   C:\Windows\AppPatch\emet.dll
+ModLoad: 0f700000 0f919000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\libpeerconnection.dll
+ModLoad: 0bed0000 0bfa8000   chrome.exe
+ModLoad: 760d0000 76130000   C:\Windows\SysWOW64\IMM32.DLL
+ModLoad: 745e0000 746ac000   C:\Windows\syswow64\MSCTF.dll
+ModLoad: 03fb0000 04279000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\ffmpegsumo.dll
+ModLoad: 74f80000 75bca000   C:\Windows\syswow64\SHELL32.dll
+ModLoad: 0f960000 118db000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\chrome_child.dll
+Symbol search path is: *** Invalid ***
+****************************************************************************
+* Symbol loading may be unreliable without a symbol search path.           *
+* Use .symfix to have the debugger choose a symbol path.                   *
+* After setting your symbol path, use .reload to refresh symbol locations. *
+****************************************************************************
+Executable search path is: 
+ModLoad: 01130000 01208000   chrome.exe
+ModLoad: 746c0000 747db000   C:\Windows\syswow64\WININET.dll
+ModLoad: 76ea0000 77020000   ntdll.dll
+ModLoad: 74e10000 74e13000   C:\Windows\syswow64\Normaliz.dll
+ModLoad: 76130000 762e9000   C:\Windows\syswow64\iertutil.dll
+ModLoad: 74e60000 74f71000   C:\Windows\syswow64\urlmon.dll
+ModLoad: 74cb0000 74e0c000   C:\Windows\syswow64\ole32.dll
+ModLoad: 74b10000 74b9f000   C:\Windows\syswow64\OLEAUT32.dll
+ModLoad: 74e20000 74e55000   C:\Windows\syswow64\WS2_32.dll
+ModLoad: 74ba0000 74ba6000   C:\Windows\syswow64\NSI.dll
+ModLoad: 76e70000 76e75000   C:\Windows\syswow64\PSAPI.DLL
+ModLoad: 73820000 73871000   C:\Windows\SysWOW64\WINSPOOL.DRV
+ModLoad: 75f00000 76020000   C:\Windows\syswow64\CRYPT32.dll
+ModLoad: 763d0000 764e0000   C:\Windows\syswow64\kernel32.dll
+ModLoad: 74840000 74887000   C:\Windows\syswow64\KERNELBASE.dll
+ModLoad: 746b0000 746bc000   C:\Windows\syswow64\MSASN1.dll
+ModLoad: 74270000 742dd000   C:\Windows\SysWOW64\SYSFER.DLL
+ModLoad: 73f30000 73f4c000   C:\Windows\SysWOW64\IPHLPAPI.DLL
+ModLoad: 747e0000 74837000   C:\Windows\syswow64\SHLWAPI.dll
+ModLoad: 749f0000 74a80000   C:\Windows\syswow64\GDI32.dll
+ModLoad: 74bb0000 74cb0000   C:\Windows\syswow64\USER32.dll
+ModLoad: 748f0000 74990000   C:\Windows\syswow64\ADVAPI32.dll
+ModLoad: 74130000 74137000   C:\Windows\SysWOW64\WINNSI.DLL
+ModLoad: 76020000 760cc000   C:\Windows\syswow64\msvcrt.dll
+ModLoad: 74420000 74428000   C:\Windows\SysWOW64\Secur32.dll
+ModLoad: 765c0000 765d9000   C:\Windows\SysWOW64\sechost.dll
+ModLoad: 75bd0000 75cc0000   C:\Windows\syswow64\RPCRT4.dll
+ModLoad: 74580000 745e0000   C:\Windows\syswow64\SspiCli.dll
+ModLoad: 74570000 7457c000   C:\Windows\syswow64\CRYPTBASE.dll
+ModLoad: 74890000 7489a000   C:\Windows\syswow64\LPK.dll
+ModLoad: 75cc0000 75d5d000   C:\Windows\syswow64\USP10.dll
+ModLoad: 69350000 6935c000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\chrome_elf.dll
+ModLoad: 74190000 741a7000   C:\Windows\SysWOW64\USERENV.dll
+ModLoad: 74180000 7418b000   C:\Windows\SysWOW64\profapi.dll
+ModLoad: 73f50000 73f5d000   C:\Windows\SysWOW64\WTSAPI32.dll
+ModLoad: 74410000 74419000   C:\Windows\SysWOW64\VERSION.dll
+ModLoad: 73140000 73172000   C:\Windows\SysWOW64\WINMM.dll
+ModLoad: 72880000 7296b000   C:\Windows\SysWOW64\dbghelp.dll
+ModLoad: 70030000 7007c000   C:\Windows\SysWOW64\apphelp.dll
+ModLoad: 6d490000 6d62e000   C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\comctl32.dll
+ModLoad: 6ccd0000 6cce1000   C:\Windows\AppPatch\emet.dll
+ModLoad: 713e0000 71460000   C:\Windows\SysWOW64\UxTheme.dll
+ModLoad: 4a810000 4b191000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\icudt.dll
+ModLoad: 0f160000 0f55b000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\pdf.dll
+ModLoad: 760d0000 76130000   C:\Windows\SysWOW64\IMM32.DLL
+ModLoad: 745e0000 746ac000   C:\Windows\syswow64\MSCTF.dll
+ModLoad: 593b0000 59416000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\ppGoogleNaClPluginChrome.dll
+ModLoad: 74f80000 75bca000   C:\Windows\syswow64\SHELL32.dll
+ModLoad: 0f700000 0f919000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\libpeerconnection.dll
+ModLoad: 0f960000 118db000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\chrome_child.dll
+ModLoad: 746c0000 747db000   C:\Windows\syswow64\WININET.dll
+ModLoad: 74e10000 74e13000   C:\Windows\syswow64\Normaliz.dll
+ModLoad: 76130000 762e9000   C:\Windows\syswow64\iertutil.dll
+ModLoad: 74e60000 74f71000   C:\Windows\syswow64\urlmon.dll
+ModLoad: 74cb0000 74e0c000   C:\Windows\syswow64\ole32.dll
+ModLoad: 74b10000 74b9f000   C:\Windows\syswow64\OLEAUT32.dll
+ModLoad: 74e20000 74e55000   C:\Windows\syswow64\WS2_32.dll
+ModLoad: 74ba0000 74ba6000   C:\Windows\syswow64\NSI.dll
+ModLoad: 76e70000 76e75000   C:\Windows\syswow64\PSAPI.DLL
+ModLoad: 73820000 73871000   C:\Windows\SysWOW64\WINSPOOL.DRV
+ModLoad: 75f00000 76020000   C:\Windows\syswow64\CRYPT32.dll
+ModLoad: 746b0000 746bc000   C:\Windows\syswow64\MSASN1.dll
+ModLoad: 73f30000 73f4c000   C:\Windows\SysWOW64\IPHLPAPI.DLL
+ModLoad: 04400000 046c9000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\ffmpegsumo.dll
+ModLoad: 74130000 74137000   C:\Windows\SysWOW64\WINNSI.DLL
+ModLoad: 74420000 74428000   C:\Windows\SysWOW64\Secur32.dll
+ModLoad: 72880000 7296b000   C:\Windows\SysWOW64\dbghelp.dll
+ModLoad: 6d490000 6d62e000   C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\comctl32.dll
+ModLoad: 713e0000 71460000   C:\Windows\SysWOW64\UxTheme.dll
+ModLoad: 4a810000 4b191000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\icudt.dll
+ModLoad: 0f160000 0f55b000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\pdf.dll
+ModLoad: 593b0000 59416000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\ppGoogleNaClPluginChrome.dll
+ModLoad: 0f700000 0f919000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\libpeerconnection.dll
+ModLoad: 03600000 038c9000   C:\Users\ssachin\AppData\Local\Google\Chrome SxS\Application\33.0.1718.0\ffmpegsumo.dll
+ModLoad: 693b0000 69429000   C:\Windows\SysWOW64\mscms.dll
+ModLoad: 73de0000 73de5000   C:\Windows\SysWOW64\wshtcpip.dll
+ModLoad: 741f0000 74228000   C:\Windows\SysWOW64\ncrypt.dll
+ModLoad: 74390000 743a7000   C:\Windows\SysWOW64\bcrypt.dll
+ModLoad: 741b0000 741ed000   C:\Windows\SysWOW64\bcryptprimitives.dll
+ModLoad: 66dd0000 66dec000   C:\Windows\SysWOW64\cryptnet.dll
+ModLoad: 5e400000 5e436000   NPPDF32.dll
+ModLoad: 6c310000 6c31b000   npMeetingJoinPluginOC.DLL
+ModLoad: 5e400000 5e436000   NPPDF32.dll
+ModLoad: 5e410000 5e439000   NPQTPLUGIN.dll
+ModLoad: 5e410000 5e439000   NPQTPLUGIN.dll
+ModLoad: 5e410000 5e439000   NPQTPLUGIN.dll
+ModLoad: 5e410000 5e439000   NPQTPLUGIN.dll
+ModLoad: 5e410000 5e439000   NPQTPLUGIN.dll
+ModLoad: 5e410000 5e439000   NPQTPLUGIN.dll
+ModLoad: 5e410000 5e439000   NPQTPLUGIN.dll
+ModLoad: 5e410000 5e439000   NPQTPLUGIN.dll
+ModLoad: 5e410000 5e439000   NPQTPLUGIN.dll
+ModLoad: 5e410000 5e439000   NPQTPLUGIN.dll
+ModLoad: 5e410000 5e438000   NP-MSWMP.dll
+ModLoad: 6c310000 6c319000   NpSpWrap.dll
+ModLoad: 5e400000 5e436000   NPPDF32.dll
+ModLoad: 5a0c0000 5a157000   npGoogleUpdate3_unsigned.dll
+ModLoad: 592d0000 593aa000   npdeployJava1.dll
+ModLoad: 5e410000 5e43b000   npjp2.dll
+ModLoad: 68e70000 68e7b000   npMeetingJoinPluginOC.DLL
+ModLoad: 63420000 63443000   nppl3260.dll
+ModLoad: 606a0000 606a6000   nprjplug.dll
+ModLoad: 62110000 62125000   nprpjplug.dll
+ModLoad: 5a100000 5a15f000   npvlc.dll
+ModLoad: 64730000 64742000   npitunes.dll
+ModLoad: 10000000 1007a000   npUnity3D32.dll
+ModLoad: 5a0c0000 5a157000   npGoogleUpdate3_unsigned.dll
+ModLoad: 5e400000 5e435000   NP32DSW.dll
+ModLoad: 0f8e0000 10955000   npswf32.dll
+ModLoad: 59270000 593a1000   NPCTRL.dll
+ModLoad: 524b0000 525e0000   C:\Windows\SysWOW64\WindowsCodecs.dll
+ModLoad: 6c6f0000 6c721000   EhStorAPI.DLL
+ModLoad: 6c6f0000 6c721000   C:\Windows\SysWOW64\EhStorShell.dll
+ModLoad: 6e620000 6e690000   ntshrui.dll
+ModLoad: 6e620000 6e690000   C:\Windows\SysWOW64\ntshrui.dll
+ModLoad: 71ab0000 71ac9000   C:\Windows\SysWOW64\srvcli.dll
+ModLoad: 707a0000 707ab000   C:\Windows\SysWOW64\cscapi.dll
+ModLoad: 73d60000 73d6a000   C:\Windows\SysWOW64\slc.dll
+ModLoad: 69480000 694af000   C:\Windows\SysWOW64\shdocvw.dll
+ModLoad: 74e60000 74f71000   C:\Windows\SysWOW64\urlmon.dll
+ModLoad: 76130000 762e9000   C:\Windows\syswow64\iertutil.dll
+ModLoad: 746c0000 747db000   C:\Windows\syswow64\WININET.dll
+ModLoad: 74e10000 74e13000   C:\Windows\syswow64\Normaliz.dll
+ModLoad: 0d260000 0deaa000   C:\Windows\SysWOW64\shell32.dll
+ModLoad: 73ca0000 73cb0000   C:\Program Files (x86)\Windows Defender\MpOav.dll
+ModLoad: 59340000 593a3000   C:\Program Files (x86)\Windows Defender\MPCLIENT.DLL
+ModLoad: 0d260000 0d360000   C:\Windows\SysWOW64\user32.dll
+ModLoad: 0d410000 0e05a000   C:\Windows\SysWOW64\shell32.dll
+(21c4.234c): Unknown exception - code 0000071a (first chance)
+(21c4.234c): Unknown exception - code 0000071a (first chance)

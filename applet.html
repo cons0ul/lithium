@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style id="s">
+#test0 html {
+  overflow: hidden;
+}
+
+#test0 body {
+  margin: 0;
+}
+
+#test0 ::cue(b.foo) {
+  font-family: sans-serif;
+  color: #00ff00;
+}#test1 .editing {
+  border: 2px solid red;
+  padding: 12px;
+  font-size: 24px;
+}#test2 html {
+  overflow: hidden;
+}
+
+#test2 body {
+  margin: 0;
+}
+
+#test2 .video {
+  display: inline-block;
+  width: 1280px;
+  height: 720px;
+  font-size: 36px;
+  position: relative;
+  overflow: hidden;
+}
+
+#test2 .cue {
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  right: 0;
+  width: 50%;
+  text-align: center;
+}
+
+#test2 .cue > span {
+  font-family: sans-serif;
+  background: rgba(0,0,0,0.8);
+  color: white;
+  font-weight: bold;
+  white-space: nowrap;
+}#test3 #article {
+  -webkit-flow-into: article;
+  border: 2px solid black;
+}
+
+#test3 #region_1,
+#test3 #region_2 {
+  -webkit-flow-from: no_article;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+}
+
+#test3 .block {
+  display: block;
+}
+
+#test3 #region_1,
+#test3 #region_2 {
+  height: 110px;
+  width: 200px;
+  margin: 5px;
+}#test4 body {
+  margin: 50px;
+  font-size: 20px;
+  font-family: Times;
+}
+
+#test4 .lrblock {
+  writing-mode: tb-lr;
+  /* IE */
+  -webkit-writing-mode: vertical-lr;
+  height: 275px;
+  margin-bottom: 50px;
+  padding: 1px;
+  background-color: #eee;
+}
+
+#test4 .basic {
+  width: 275px;
+  margin: 0;
+  padding: 1px;
+  writing-mode: lr-tb;
+  /* IE */
+  -webkit-writing-mode: horizontal-tb;
+}
+
+#test4 div.d0 {
+  background-color: #fee;
+}
+
+#test4 div.d1 {
+  background-color: #ffe;
+}
+
+#test4 p {
+  margin: 10% 5% 10% 5%;
+  background-color: #faa;
+  border-left: 20px solid #f88;
+  border-right: 20px solid #f88;
+  line-height: 1em;
+  padding: 1px;
+}
+
+#test4 .vert {
+  writing-mode: tb-rl;
+  /* IE */
+  -webkit-writing-mode: vertical-rl;
+}</style>
+<script>window.onload=start;function start(){window.location.href=window.location.href;}</script>
+<body>
+
+<center id='test0'  id="Test-CENTER" title="CENTER Element" lang="en" dir="ltr" class="CENTER-class">
+<object align="middle"></object>
+</center>
+<center>
+<p align="center">Test Lists</p>
+</center>
+<br />
+<ol compact="compact" start="1" type="1">
+  <li type="square" value="2">EMP0001
+  <ul compact="compact" type="disc">
+    <li>Margaret Martin
+    <dl>
+      <dd id="Test-DD" title="DD Element" lang="en" dir="ltr" class="DD-class">Accountant</dd>
+      <dd>56,000</dd>
+      <dd>Female</dd>
+      <dd>1230 North Ave. Dallas, Texas 98551</dd>
+    </dl>
+    </li>
+  </ul>
+  </li>
+</ol>
+<br />
+<b id="Test-B" title="B Element" lang="en" dir="ltr" class="B-class">Bold</b>
+<br />
+<dl>
+  <dt id="Test-DT" title="DT Element" lang="en" dir="ltr" class="DT-class">DT element</dt>
+</dl>
+<br />
+<bdo id="Test-BDO" title="BDO Element" lang="en" dir="ltr" class="BDO-class">Bidirectional algorithm overide
+</bdo>
+<br />
+<i id="Test-I" title="I Element" lang="en" dir="ltr" class="I-class">Italicized</i>
+<br />
+<span id="Test-SPAN" title="SPAN Element" lang="en" dir="ltr" class="SPAN-class"></span>
+<br />
+<tt id="Test-TT" title="TT Element" lang="en" dir="ltr" class="TT-class">Teletype</tt>
+<br />
+<sub id="Test-SUB" title="SUB Element" lang="en" dir="ltr" class="SUB-class">Subscript</sub>
+<br />
+<sup id="Test-SUP" title="SUP Element" lang="en" dir="ltr" class="SUP-class">SuperScript</sup>
+<br />
+<s id="Test-S" title="S Element" lang="en" dir="ltr" class="S-class">Strike Through (S)</s>
+<br />
+<strike id="Test-STRIKE" title="STRIKE Element" lang="en" dir="ltr" class="STRIKE-class">Strike Through (STRIKE)</strike>
+<br />
+<small id="Test-SMALL" title="SMALL Element" lang="en" dir="ltr" class="SMALL-class">Small</small>
+<br />
+<big id="Test-BIG" title="BIG Element" lang="en" dir="ltr" class="BIG-class">Big</big>
+<br />
+<em id="Test-EM" title="EM Element" lang="en" dir="ltr" class="EM-class">Emphasis</em>
+<br />
+<strong id="Test-STRONG" title="STRONG Element" lang="en" dir="ltr" class="STRONG-class">Strong</strong>
+<br />
+<dfn id="Test-DFN" title="DFN Element" lang="en" dir="ltr" class="DFN-class">
+        <code id="Test-CODE" title="CODE Element" lang="en" dir="ltr" class="CODE-class">10  Computer Code Fragment 20  Temp = 10</code>
+        <samp id="Test-SAMP" title="SAMP Element" lang="en" dir="ltr" class="SAMP-class">Temp = 20</samp>
+        <kbd id="Test-KBD" title="KBD Element" lang="en" dir="ltr" class="KBD-class">*2</kbd>
+        <var id="Test-VAR" title="VAR Element" lang="en" dir="ltr" class="VAR-class">Temp</var>
+        <cite id="Test-CITE" title="CITE Element" lang="en" dir="ltr" class="CITE-class">Citation</cite>
+</dfn>
+<br />
+<abbr id="Test-ABBR" title="ABBR Element" lang="en" dir="ltr" class="ABBR-class">Temp</abbr>
+<br />
+<acronym id="Test-ACRONYM" title="ACRONYM Element" lang="en" dir="ltr" class="ACRONYM-class">NIST</acronym>
+<br />
+<address id="Test-ADDRESS" title="ADDRESS Element" lang="en" dir="ltr" class="ADDRESS-class">Gaithersburg, MD 20899</address>
+<br />
+<noframes id="Test-NOFRAMES" title="NOFRAMES Element" lang="en" dir="ltr" class="NOFRAMES-class">Not</noframes>
+<br />
+<noscript id="Test-NOSCRIPT" title="NOSCRIPT Element" lang="en" dir="ltr" class="NOSCRIPT-class">Not</noscript>
+<br />
+<u id="Test-U" title="U Element" lang="en" dir="ltr" class="U-class">Underlined</u>
+
+
+<p id='test1' >Table with one maroon row and one white row</p>
+
+<table border>
+
+<tr bgcolor="maroon" >
+
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+</tr>
+
+<tr>
+
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+</tr>
+
+</table>
+
+
+<p id='test2'  style="display:none;">percentage height images in DIV with no height (red)</p>
+<div style="border: 1px solid green;">
+<div style="border: 1px solid red;">
+  <img height="100%" width="100%" src="../images/raptor.jpg">
+</div>
+</div>
+<p>percentage height images in DIV with no height (red) in a DIV with no height (green)</p>
+<div style="border: 3px dotted green;">
+ <div style="border: 1px solid red;">
+  <img height="100%" src="../images/raptor.jpg">
+ </div>
+</div>
+<p>percentage height image in table cell (red), in a DIV with no height (green)</p>
+
+<div>
+<table style="border: 1px solid red;" height="100%">
+<tr>
+<td style="border: 1px solid red;"><img src="../images/raptor.jpg"></td>
+</tr>
+</table>
+</div>
+
+<table id='test3'  align="center" summary="Table 1">
+<tbody>
+<tr>
+<th>Id</th>
+<th>Name</th>
+<th>Position</th>
+<th>Salary</th>
+</tr>
+</tbody>
+</table>
+<table id="table-1" align="center" border="4" bgcolor="#ff0000" frame="border" cellpadding="2" cellspacing="2" summary="HTML Control Table" rules="all" width="680">
+<caption align="top">Table Caption</caption>
+<thead align="center" valign="middle" char="*" charoff="1">
+<tr align="center" bgcolor="#00FFFF" valign="middle" char="*" charoff="1">
+<th id="header-1">Employee Id</th>
+<th id="header-2" abbr="maiden" axis="center" align="center" bgcolor="#00FFFF" colspan="1" height="50" nowrap="nowrap" rowspan="1" scope="col" headers="header-1" valign="middle" width="100">Employee Name</th>
+<th>Position</th>
+<th>Salary</th>
+<th>Gender</th>
+<th>Address</th>
+</tr>
+</thead>
+<tfoot align="center" valign="middle" char="+" charoff="2">
+<tr>
+<th>next page ...</th>
+<th>next page ...</th>
+<th>next page ...</th>
+<th>next page ...</th>
+<th>next page ...</th>
+<th>next page ...</th>
+</tr>
+</tfoot>
+<tbody align="center" valign="middle" char="$" charoff="3">
+<tr>
+<td axis="center" id="Table-3" abbr="maiden2" align="center" bgcolor="#FF0000" colspan="1" height="50" nowrap="nowrap" rowspan="1" scope="col" headers="header-2" valign="middle" width="175">EMP0001</td>
+<td headers="header-2">Margaret Martin</td>
+<td>Accountant</td>
+<td>56,000</td>
+<td>Female</td>
+<td>1230 North Ave. Dallas, Texas 98551</td>
+</tr>
+<tr>
+<td>EMP0002</td>
+<td>Martha Raynolds</td>
+<td>Secretary</td>
+<td>35,000</td>
+<td>Female</td>
+<td>1900 Dallas Road Dallas, Texas 98554</td>
+</tr>
+</tbody>
+</table>
+
+<p id='test4' >
+<applet align="bottom" alt="Applet Number 1" archive="" code="org/w3c/domts/DOMTSApplet.class" codebase="applets" height="306" hspace="0" name="applet1" vspace="0" width="301"></applet>
+</p>
+</body>
+</html>

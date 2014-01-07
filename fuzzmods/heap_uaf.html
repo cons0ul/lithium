@@ -1,0 +1,78 @@
+
+<script>
+
+var firstFrame;
+var firstFrameRoot;
+var embedElement;
+var basefontElement;
+var colgroupElement;
+var callbackCount = 0;
+
+function secondFrameSrc(frame) {
+  if (window.top.callbackCount++ > 0) {
+    reallyStart(frame);
+  }
+}
+
+function start() {
+  if (window.testRunner) {
+    testRunner.dumpAsText();
+    testRunner.waitUntilDone();
+  }
+
+  firstFrame = document.createElement('iframe');
+  document.getElementById('store_div').appendChild(firstFrame);
+  embedElement = document.createElement('embed');
+  firstFrame.appendChild(embedElement);
+  basefontElement = document.createElement('basefont');
+  embedElement.appendChild(basefontElement);
+  colgroupElement = document.createElement('colgroup');
+  basefontElement.appendChild(colgroupElement);
+  input_element = document.createElement('input');
+  colgroupElement.appendChild(input_element);
+  firstFrameRoot = firstFrame.contentDocument.documentElement;
+
+  window.callbackCount = 0;
+  input_element.insertAdjacentHTML(
+      'beforeend',
+      '<iframe id="second_frame" src="javascript:window.top.secondFrameSrc(this);">');
+
+  firstFrameRoot.appendChild(embedElement);
+  document.documentElement.appendChild(basefontElement);
+  firstFrameRoot.appendChild(colgroupElement);
+  firstFrameRoot.appendChild(input_element);
+}
+
+function reallyStart(frame) {
+  frame.onpagehide = function () {
+    firstFrame.src = 'javascript:window.top.navigateThere();';
+  };
+  firstFrame.src = 'javascript:window.top.navigateHere();';
+
+  if (window.location.hash == '#done') {
+    if (window.testRunner)
+      window.testRunner.notifyDone();
+    return;
+  }
+
+  window.setTimeout(function () {
+    window.location.hash = '#done';
+    window.location.reload();
+  }, 0);
+}
+
+function navigateHere() {
+  return 'X';
+}
+
+function navigateThere() {
+  firstFrame.src='javascript:window.top.navigateThereNested();';
+  return 'E';
+}
+
+function navigateThereNested() {
+  return 'a';
+}
+
+</script>
+<body onload="start()" id="store_div">

@@ -1,0 +1,203 @@
+
+Microsoft (R) Windows Debugger Version 6.2.9200.20512 X86
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+CommandLine: "C:\Program Files (x86)\Mozilla Firefox\firefox.exe" "http://localhost:3333/fuzz"  -c "r;uf @eip;kV;.lastevent;q" 
+Symbol search path is: *** Invalid ***
+****************************************************************************
+* Symbol loading may be unreliable without a symbol search path.           *
+* Use .symfix to have the debugger choose a symbol path.                   *
+* After setting your symbol path, use .reload to refresh symbol locations. *
+****************************************************************************
+Executable search path is: 
+ModLoad: 012e0000 01324000   firefox.exe
+ModLoad: 77af0000 77c70000   ntdll.dll
+Page heap: pid 0x2224: page heap enabled with flags 0x3.
+ModLoad: 6a640000 6a6a0000   C:\Windows\syswow64\verifier.dll
+Page heap: pid 0x2224: page heap enabled with flags 0x3.
+ModLoad: 76920000 76a30000   C:\Windows\syswow64\kernel32.dll
+ModLoad: 77050000 77097000   C:\Windows\syswow64\KERNELBASE.dll
+ModLoad: 74f20000 74f8d000   C:\Windows\SysWOW64\SYSFER.DLL
+ModLoad: 767f0000 768f0000   C:\Windows\syswow64\USER32.dll
+ModLoad: 75950000 759e0000   C:\Windows\syswow64\GDI32.dll
+ModLoad: 75620000 7562a000   C:\Windows\syswow64\LPK.dll
+ModLoad: 76ef0000 76f8d000   C:\Windows\syswow64\USP10.dll
+ModLoad: 76fa0000 7704c000   C:\Windows\syswow64\msvcrt.dll
+ModLoad: 75630000 756d0000   C:\Windows\syswow64\ADVAPI32.dll
+ModLoad: 756d0000 756e9000   C:\Windows\SysWOW64\sechost.dll
+ModLoad: 75460000 75550000   C:\Windows\syswow64\RPCRT4.dll
+ModLoad: 751d0000 75230000   C:\Windows\syswow64\SspiCli.dll
+ModLoad: 751c0000 751cc000   C:\Windows\syswow64\CRYPTBASE.dll
+ModLoad: 57cc0000 57d7e000   C:\Program Files (x86)\Mozilla Firefox\MSVCR100.dll
+ModLoad: 74460000 744ac000   C:\Windows\SysWOW64\apphelp.dll
+ModLoad: 6bb90000 6bba1000   C:\Windows\AppPatch\emet.dll
+ModLoad: 770b0000 77110000   C:\Windows\SysWOW64\IMM32.DLL
+ModLoad: 75230000 752fc000   C:\Windows\syswow64\MSCTF.dll
+ModLoad: 66b70000 66bd9000   C:\Program Files (x86)\Mozilla Firefox\MSVCP100.dll
+ModLoad: 6a5a0000 6a5c2000   C:\Program Files (x86)\Mozilla Firefox\mozglue.dll
+ModLoad: 556f0000 558a5000   C:\Program Files (x86)\Mozilla Firefox\nss3.dll
+ModLoad: 72e40000 72e72000   C:\Windows\SysWOW64\WINMM.dll
+ModLoad: 73080000 73087000   C:\Windows\SysWOW64\WSOCK32.dll
+ModLoad: 76eb0000 76ee5000   C:\Windows\syswow64\WS2_32.dll
+ModLoad: 75610000 75616000   C:\Windows\syswow64\NSI.dll
+ModLoad: 53580000 538bf000   C:\Program Files (x86)\Mozilla Firefox\mozjs.dll
+ModLoad: 770a0000 770a5000   C:\Windows\syswow64\PSAPI.DLL
+ModLoad: 6bd60000 6bd66000   C:\Program Files (x86)\Mozilla Firefox\mozalloc.dll
+ModLoad: 53210000 53574000   C:\Program Files (x86)\Mozilla Firefox\gkmedias.dll
+ModLoad: 75300000 7545c000   C:\Windows\syswow64\ole32.dll
+ModLoad: 6ff20000 6ff25000   C:\Windows\SysWOW64\MSIMG32.dll
+ModLoad: 51bc0000 53206000   C:\Program Files (x86)\Mozilla Firefox\xul.dll
+ModLoad: 70de0000 70df1000   C:\Windows\SysWOW64\NETAPI32.dll
+ModLoad: 70e20000 70e29000   C:\Windows\SysWOW64\netutils.dll
+ModLoad: 70e00000 70e19000   C:\Windows\SysWOW64\srvcli.dll
+ModLoad: 70e30000 70e3f000   C:\Windows\SysWOW64\wkscli.dll
+ModLoad: 6a6b0000 6a6bf000   C:\Windows\SysWOW64\SAMCLI.DLL
+ModLoad: 74810000 7482c000   C:\Windows\SysWOW64\IPHLPAPI.DLL
+ModLoad: 74c50000 74c57000   C:\Windows\SysWOW64\WINNSI.DLL
+ModLoad: 75ba0000 767ea000   C:\Windows\syswow64\SHELL32.dll
+ModLoad: 76dd0000 76e27000   C:\Windows\syswow64\SHLWAPI.dll
+ModLoad: 74e60000 74e69000   C:\Windows\SysWOW64\VERSION.dll
+ModLoad: 70bd0000 70c50000   C:\Windows\SysWOW64\UxTheme.dll
+ModLoad: 76a30000 76bcd000   C:\Windows\syswow64\SETUPAPI.dll
+ModLoad: 77110000 77137000   C:\Windows\syswow64\CFGMGR32.dll
+ModLoad: 75580000 7560f000   C:\Windows\syswow64\OLEAUT32.dll
+ModLoad: 75930000 75942000   C:\Windows\syswow64\DEVOBJ.dll
+ModLoad: 70dc0000 70dd3000   C:\Windows\SysWOW64\dwmapi.dll
+ModLoad: 64b90000 64cc5000   C:\Windows\SysWOW64\dwrite.dll
+ModLoad: 73c30000 73d1b000   C:\Windows\SysWOW64\dbghelp.dll
+ModLoad: 6c6b0000 6c84e000   C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\comctl32.dll
+ModLoad: 76d40000 76dc3000   C:\Windows\syswow64\CLBCatQ.DLL
+ModLoad: 73b30000 73c25000   C:\Windows\SysWOW64\propsys.dll
+ModLoad: 74e30000 74e51000   C:\Windows\SysWOW64\ntmarta.dll
+ModLoad: 76cf0000 76d35000   C:\Windows\syswow64\WLDAP32.dll
+ModLoad: 746f0000 7472c000   C:\Windows\SysWOW64\mswsock.dll
+ModLoad: 746d0000 746d5000   C:\Windows\SysWOW64\wshtcpip.dll
+Could not read chrome manifest 'file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/chrome.manifest'.
+ModLoad: 5aac0000 5ab06000   C:\Program Files (x86)\Mozilla Firefox\browser\components\browsercomps.dll
+Could not read chrome manifest 'file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/browser/extensions/%7B972ce4c6-7e08-4474-a285-3208198ce6fd%7D/chrome.manifest'.
+While creating services from category 'profile-after-change', could not create service for entry 'Disk Space Watcher Service', contract ID '@mozilla.org/toolkit/disk-space-watcher;1'
+ModLoad: 75550000 7557e000   C:\Windows\syswow64\WINTRUST.dll
+ModLoad: 76bd0000 76cf0000   C:\Windows\syswow64\CRYPT32.dll
+ModLoad: 77ac0000 77acc000   C:\Windows\syswow64\MSASN1.dll
+ModLoad: 70d70000 70dbc000   C:\Windows\SysWOW64\dxgi.dll
+ModLoad: 666b0000 666dc000   C:\Windows\SysWOW64\d3d10_1.dll
+ModLoad: 66660000 666a1000   C:\Windows\SysWOW64\d3d10_1core.dll
+ModLoad: 709f0000 70b65000   C:\Windows\SysWOW64\d3d11.dll
+ModLoad: 0f1a0000 0f908000   C:\Windows\SysWOW64\nvwgf2um.dll
+ModLoad: 62890000 62bd7000   C:\Windows\SysWOW64\d2d1.dll
+ModLoad: 5a830000 5a8a9000   C:\Windows\SysWOW64\mscms.dll
+ModLoad: 74d00000 74d17000   C:\Windows\SysWOW64\USERENV.dll
+ModLoad: 74cf0000 74cfb000   C:\Windows\SysWOW64\profapi.dll
+ModLoad: 74e10000 74e26000   C:\Windows\SysWOW64\CRYPTSP.dll
+ModLoad: 74dd0000 74e0b000   C:\Windows\SysWOW64\rsaenh.dll
+ModLoad: 74dc0000 74dce000   C:\Windows\SysWOW64\RpcRtRemote.dll
+ModLoad: 10ef0000 11b3a000   C:\Windows\SysWOW64\shell32.dll
+[JavaScript Error: "Warning: unrecognized command line flag -c
+" {file: "resource://app/components/nsBrowserContentHandler.js" line: 765}]
+ModLoad: 11a00000 11b5c000   C:\Windows\SysWOW64\ole32.dll
+ModLoad: 74020000 74059000   C:\Windows\SysWOW64\MMDevApi.dll
+ModLoad: 73db0000 73de6000   C:\Windows\SysWOW64\AUDIOSES.DLL
+ModLoad: 70d20000 70d26000   C:\Windows\SysWOW64\wship6.dll
+ModLoad: 745d0000 745e0000   C:\Windows\SysWOW64\NLAapi.dll
+ModLoad: 6f8e0000 6f8f0000   C:\Windows\SysWOW64\napinsp.dll
+ModLoad: 6f8c0000 6f8d2000   C:\Windows\SysWOW64\pnrpnsp.dll
+ModLoad: 747c0000 74804000   C:\Windows\SysWOW64\DNSAPI.dll
+ModLoad: 6f8b0000 6f8b8000   C:\Windows\SysWOW64\winrnr.dll
+ModLoad: 6c910000 6c931000   C:\Program Files (x86)\Bonjour\mdnsNSP.dll
+ModLoad: 6b930000 6b957000   C:\Program Files (x86)\Mozilla Firefox\softokn3.dll
+ModLoad: 6a620000 6a637000   C:\Program Files (x86)\Mozilla Firefox\nssdbm3.dll
+ModLoad: 5a720000 5a76f000   C:\Program Files (x86)\Mozilla Firefox\freebl3.dll
+ModLoad: 582a0000 58301000   C:\Program Files (x86)\Mozilla Firefox\nssckbi.dll
+ModLoad: 756f0000 7580b000   C:\Windows\syswow64\WININET.dll
+ModLoad: 76f90000 76f93000   C:\Windows\syswow64\Normaliz.dll
+ModLoad: 759e0000 75b99000   C:\Windows\syswow64\iertutil.dll
+ModLoad: 75810000 75921000   C:\Windows\syswow64\urlmon.dll
+ModLoad: 74e70000 74e78000   C:\Windows\SysWOW64\Secur32.dll
+ModLoad: 70540000 70592000   C:\Windows\SysWOW64\RASAPI32.dll
+ModLoad: 70ba0000 70bb5000   C:\Windows\SysWOW64\rasman.dll
+ModLoad: 6f6f0000 6f6fd000   C:\Windows\SysWOW64\rtutils.dll
+ModLoad: 71010000 71016000   C:\Windows\SysWOW64\sensapi.dll
+ModLoad: 5b5c0000 5b72f000   C:\Windows\SysWOW64\explorerframe.dll
+ModLoad: 5b590000 5b5bf000   C:\Windows\SysWOW64\DUser.dll
+ModLoad: 5b4d0000 5b582000   C:\Windows\SysWOW64\DUI70.dll
+ModLoad: 1af00000 1bb4a000   C:\Windows\SysWOW64\shell32.dll
+Symbol search path is: *** Invalid ***
+****************************************************************************
+* Symbol loading may be unreliable without a symbol search path.           *
+* Use .symfix to have the debugger choose a symbol path.                   *
+* After setting your symbol path, use .reload to refresh symbol locations. *
+****************************************************************************
+Executable search path is: 
+ModLoad: 00400000 00538000   image00400000
+ModLoad: 77af0000 77c70000   ntdll.dll
+ModLoad: 76920000 76a30000   C:\Windows\syswow64\kernel32.dll
+ModLoad: 77050000 77097000   C:\Windows\syswow64\KERNELBASE.dll
+ModLoad: 74f20000 74f8d000   C:\Windows\SysWOW64\SYSFER.DLL
+ModLoad: 767f0000 768f0000   C:\Windows\syswow64\USER32.dll
+ModLoad: 75950000 759e0000   C:\Windows\syswow64\GDI32.dll
+ModLoad: 75620000 7562a000   C:\Windows\syswow64\LPK.dll
+ModLoad: 76ef0000 76f8d000   C:\Windows\syswow64\USP10.dll
+ModLoad: 76fa0000 7704c000   C:\Windows\syswow64\msvcrt.dll
+ModLoad: 75630000 756d0000   C:\Windows\syswow64\ADVAPI32.dll
+ModLoad: 756d0000 756e9000   C:\Windows\SysWOW64\sechost.dll
+ModLoad: 75460000 75550000   C:\Windows\syswow64\RPCRT4.dll
+ModLoad: 751d0000 75230000   C:\Windows\syswow64\SspiCli.dll
+ModLoad: 751c0000 751cc000   C:\Windows\syswow64\CRYPTBASE.dll
+ModLoad: 75ba0000 767ea000   C:\Windows\syswow64\SHELL32.dll
+ModLoad: 76dd0000 76e27000   C:\Windows\syswow64\SHLWAPI.dll
+ModLoad: 6c6b0000 6c84e000   C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\COMCTL32.dll
+ModLoad: 75300000 7545c000   C:\Windows\syswow64\ole32.dll
+ModLoad: 74e60000 74e69000   C:\Windows\SysWOW64\VERSION.dll
+ModLoad: 770b0000 77110000   C:\Windows\SysWOW64\IMM32.DLL
+ModLoad: 75230000 752fc000   C:\Windows\syswow64\MSCTF.dll
+ModLoad: 70bd0000 70c50000   C:\Windows\SysWOW64\uxtheme.dll
+ModLoad: 6f920000 6f925000   C:\Windows\SysWOW64\SHFOLDER.DLL
+ModLoad: 75580000 7560f000   C:\Windows\syswow64\OLEAUT32.dll
+ModLoad: 76a30000 76bcd000   C:\Windows\syswow64\SETUPAPI.dll
+ModLoad: 77110000 77137000   C:\Windows\syswow64\CFGMGR32.dll
+ModLoad: 75930000 75942000   C:\Windows\syswow64\DEVOBJ.dll
+ModLoad: 76d40000 76dc3000   C:\Windows\syswow64\CLBCatQ.DLL
+ModLoad: 73b30000 73c25000   C:\Windows\SysWOW64\propsys.dll
+ModLoad: 74e30000 74e51000   C:\Windows\SysWOW64\ntmarta.dll
+ModLoad: 76cf0000 76d35000   C:\Windows\syswow64\WLDAP32.dll
+ModLoad: 74cf0000 74cfb000   C:\Windows\SysWOW64\profapi.dll
+ModLoad: 744c0000 744c6000   C:\Windows\SysWOW64\rasadhlp.dll
+ModLoad: 704c0000 704f8000   C:\Windows\SysWOW64\fwpuclnt.dll
+ModLoad: 10000000 10006000   C:\Users\ssachin\AppData\Local\Temp\nshC3DE.tmp\System.dll
+ModLoad: 003f0000 003ff000   C:\Users\ssachin\AppData\Local\Temp\nshC3DE.tmp\CityHash.dll
+ModLoad: 003f0000 003f5000   C:\Users\ssachin\AppData\Local\Temp\nshC3DE.tmp\ShellLink.dll
+ModLoad: 6bf80000 6bf89000   C:\Windows\SysWOW64\LINKINFO.dll
+ModLoad: 003f0000 003f5000   C:\Users\ssachin\AppData\Local\Temp\nshC3DE.tmp\ShellLink.dll
+ModLoad: 74460000 744ac000   C:\Windows\SysWOW64\apphelp.dll
+ModLoad: 69700000 6972f000   SHDOCVW.dll
+ModLoad: 65e90000 65ebf000   C:\Windows\SysWOW64\shdocvw.dll
+ModLoad: 02690000 032da000   C:\Windows\SysWOW64\shell32.dll
+ModLoad: 003f0000 003f5000   C:\Users\ssachin\AppData\Local\Temp\nshC3DE.tmp\ShellLink.dll
+ModLoad: 003f0000 003f5000   C:\Users\ssachin\AppData\Local\Temp\nshC3DE.tmp\ShellLink.dll
+ModLoad: 003f0000 003f5000   C:\Users\ssachin\AppData\Local\Temp\nshC3DE.tmp\ShellLink.dll
+ModLoad: 003f0000 003f5000   C:\Users\ssachin\AppData\Local\Temp\nshC3DE.tmp\ShellLink.dll
+ModLoad: 003f0000 003f5000   C:\Users\ssachin\AppData\Local\Temp\nshC3DE.tmp\ShellLink.dll
+ModLoad: 003f0000 003f5000   C:\Users\ssachin\AppData\Local\Temp\nshC3DE.tmp\ShellLink.dll
+ModLoad: 003f0000 003f5000   C:\Users\ssachin\AppData\Local\Temp\nshC3DE.tmp\ShellLink.dll
+ModLoad: 003f0000 003f5000   C:\Users\ssachin\AppData\Local\Temp\nshC3DE.tmp\ShellLink.dll
+ModLoad: 003f0000 003f5000   C:\Users\ssachin\AppData\Local\Temp\nshC3DE.tmp\ShellLink.dll
+ModLoad: 003f0000 003fe000   C:\Users\ssachin\AppData\Local\Temp\nshC3DE.tmp\ApplicationID.dll
+ModLoad: 003f0000 003f5000   C:\Users\ssachin\AppData\Local\Temp\nshC3DE.tmp\ShellLink.dll
+ModLoad: 003f0000 003f5000   C:\Users\ssachin\AppData\Local\Temp\nshC3DE.tmp\ShellLink.dll
+ModLoad: 003f0000 003f5000   C:\Users\ssachin\AppData\Local\Temp\nshC3DE.tmp\ShellLink.dll
+ModLoad: 003f0000 003f5000   C:\Users\ssachin\AppData\Local\Temp\nshC3DE.tmp\ShellLink.dll
+ModLoad: 003f0000 003f5000   C:\Users\ssachin\AppData\Local\Temp\nshC3DE.tmp\ShellLink.dll
+ModLoad: 003f0000 003f5000   C:\Users\ssachin\AppData\Local\Temp\nshC3DE.tmp\ShellLink.dll
+ModLoad: 003f0000 003f5000   C:\Users\ssachin\AppData\Local\Temp\nshC3DE.tmp\ShellLink.dll
+ModLoad: 003f0000 003f5000   C:\Users\ssachin\AppData\Local\Temp\nshC3DE.tmp\ShellLink.dll
+ModLoad: 74730000 74742000   C:\Windows\SysWOW64\dhcpcsvc.DLL
+ModLoad: 74750000 7475d000   C:\Windows\SysWOW64\dhcpcsvc6.DLL
+(2224.10918): Break instruction exception - code 80000003 (first chance)
+*** ERROR: Symbol file could not be found.  Defaulted to export symbols for ntdll.dll - 
+*** ERROR: Symbol file could not be found.  Defaulted to export symbols for C:\Windows\syswow64\kernel32.dll - 
+eax=fff4c000 ebx=00000000 ecx=00000000 edx=77b8f8ea esi=00000000 edi=00000000
+eip=77b0000c esp=1d69f9b4 ebp=1d69f9e0 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+ntdll!DbgBreakPoint:
+77b0000c cc              int     3
+0:032> quit:

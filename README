@@ -1,0 +1,4 @@
+you will need base64 module
+
+	npm install base64
+	npm install css
